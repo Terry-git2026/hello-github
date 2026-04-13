@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Terry | 作品页</title>
+    <meta
+      name="description"
+      content="Terry 的前端作品页：项目、技能、联系方式。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="bg" aria-hidden="true"></div>
+    <header class="top">
+      <a class="brand" href="#top" aria-label="回到顶部">
+        <span class="brandMark">TG</span>
+        <span class="brandText">Terry</span>
+      </a>
+      <nav class="nav">
+        <a href="#projects">作品</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top" class="wrap">
+      <section class="hero reveal">
+        <p class="kicker">Hello, GitHub.</p>
+        <h1 class="title">
+          我是 <span class="accent">Terry</span>
+          <span class="sub">正在从 0 入门前端</span>
+        </h1>
+        <p class="lead">
+          这个仓库是我的第一个作品页。我会在这里持续更新练习项目，并把每一次学习记录成可展示的成果。
+        </p>
+        <div class="ctaRow">
+          <a class="btn primary" href="#projects">看作品</a>
+          <button class="btn" id="copyEmailBtn" type="button">
+            复制邮箱
+          </button>
+          <a
+            class="btn"
+            href="https://github.com/Terry-git2026"
+            target="_blank"
+            rel="noreferrer"
+            >GitHub 主页</a
+          >
+        </div>
+        <p class="note" id="copyHint" aria-live="polite"></p>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="sectionHead reveal">
+          <h2>作品</h2>
+          <p>从小项目开始，持续迭代。每个项目都能打开、能运行、能说明。</p>
+        </div>
+
+        <div class="grid">
+          <article class="card reveal">
+            <div class="cardTop">
+              <h3>hello-github</h3>
+              <span class="tag">静态站</span>
+            </div>
+            <p class="cardDesc">
+              这个作品页本身就是第一个项目：HTML + CSS + 少量 JavaScript，部署到 GitHub
+              Pages。
+            </p>
+            <div class="cardMeta">
+              <span>技术：HTML / CSS / JS</span>
+              <span>状态：持续完善</span>
+            </div>
+            <div class="cardActions">
+              <a class="link" href="#contact">给我建议</a>
+              <a
+                class="link"
+                href="https://github.com/Terry-git2026/hello-github"
+                target="_blank"
+                rel="noreferrer"
+                >查看仓库</a
+              >
+            </div>
+          </article>
+
+          <article class="card ghost reveal">
+            <div class="cardTop">
+              <h3>下一个项目</h3>
+              <span class="tag">计划中</span>
+            </div>
+            <p class="cardDesc">
+              建议：做一个 “待办清单 Todo” 或 “记账本” 小应用，包含本地存储、筛选和基本 UI。
+            </p>
+            <div class="cardMeta">
+              <span>目标：掌握 DOM / 事件 / localStorage</span>
+              <span>预计：1-2 天</span>
+            </div>
+            <div class="cardActions">
+              <a class="link" href="#about">为什么做这个</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="sectionHead reveal">
+          <h2>关于我</h2>
+          <p>你可以把这里当作我的学习路线和可交付成果清单。</p>
+        </div>
+
+        <div class="twoCol">
+          <div class="panel reveal">
+            <h3>我在学什么</h3>
+            <ul class="list">
+              <li>HTML 语义化结构与可访问性</li>
+              <li>CSS 布局（Flex/Grid）与响应式</li>
+              <li>JavaScript 基础与小型交互</li>
+              <li>Git 分支与 Pull Request 工作流</li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <h3>我如何更新这个作品页</h3>
+            <ul class="list">
+              <li>每个练习都做成一个可运行的小项目</li>
+              <li>README 里写清楚“怎么跑、学到了什么”</li>
+              <li>用 GitHub Pages 持续发布最新版本</li>
+              <li>保持小步提交，便于回看成长轨迹</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="sectionHead reveal">
+          <h2>联系</h2>
+          <p>欢迎你给我提建议，或者一起做项目练习。</p>
+        </div>
+
+        <div class="contact reveal">
+          <div class="contactRow">
+            <span class="label">邮箱</span>
+            <span class="value" id="emailText">459023622@qq.com</span>
+            <button class="miniBtn" id="copyEmailBtn2" type="button">
+              复制
+            </button>
+          </div>
+          <div class="contactRow">
+            <span class="label">GitHub</span>
+            <a
+              class="value link"
+              href="https://github.com/Terry-git2026"
+              target="_blank"
+              rel="noreferrer"
+              >github.com/Terry-git2026</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <span>© <span id="year"></span> Terry</span>
+        <span class="dot" aria-hidden="true">·</span>
+        <span class="muted">Built with HTML/CSS/JS</span>
+      </footer>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
